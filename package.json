@@ -1,7 +1,7 @@
 {
   "name": "02",
   "version": "0.1.0",
-  "homepage": "./",
+  "homepage": "./CMB",
   "private": true,
   "dependencies": {
     "@ant-design/pro-card": "^1.18.42",
