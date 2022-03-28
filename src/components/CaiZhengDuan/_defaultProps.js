@@ -3,20 +3,20 @@ import { HomeOutlined, ProjectOutlined, WarningOutlined, BarChartOutlined, Unord
 
 export default {
   route: {
-    path: '/czd',
+    path: '/CMB/czd',
     routes: [
       {
-        path: '/czd',
+        path: '/CMB/home',
         name: '首页',
         icon: <HomeOutlined />,
-        component: './czd',
+        component: '/CMB/czd',
       },
       {
-        path: '/xmgl',
+        path: '/CMB/xmgl',
         name: '项目管理',
         icon: <UnorderedListOutlined />,
         access: 'canAdmin',
-        component: './XMGL',
+        component: '/XMGL',
         routes: [
           {
             path: '/xmgl/xmxz',
@@ -97,9 +97,9 @@ export default {
 		  ],
           },
           {
-            path: '/bbgl/bbzs',
+            path: '/CMB/czd',
             name: '报表展示',
-            component: './BBZS',
+            component: '/CMB/czd',
           },
         ],
       },
@@ -135,6 +135,6 @@ export default {
     ],
   },
   location: {
-    pathname: '/czd',
+    pathname: '/CMB/czd',
   },
 };

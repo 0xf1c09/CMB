@@ -7,19 +7,19 @@ import NotFound from "../components/not-found"
 
 const routes: RouteObject[] = [
 	{
-		path: "/",
+		path: "/CMB",
 		element: <Home />,
 	},
 	{
-		path: "/czd",
+		path: "/CMB/czd",
 		element: <CZD />,
 	},
 	{
-		path: "/dwd",
+		path: "/CMB/dwd",
 		element: <DWD />,
 	},
 	{
-		path: "*",
+		path: "/CMB/*",
 		element: <NotFound />,
 	},
 ];

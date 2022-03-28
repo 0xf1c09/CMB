@@ -1,9 +1,12 @@
 import React from 'react';
 import ProLayout, { PageContainer } from '@ant-design/pro-layout';
 import ProCard from '@ant-design/pro-card';
-import { Descriptions } from 'antd';
+import { Descriptions, Avatar, Button } from 'antd';
 import defaultProps from './_defaultProps';
 import Logo from '../logo.png';
+import { LikeOutlined, UserOutlined } from '@ant-design/icons';
+import Show from './show';
+
 
 const content = (
   <Descriptions size="small" column={2}>
@@ -29,17 +32,29 @@ export default function DWD() {
 	logo={Logo}
         {...defaultProps}
         location={{
-          pathname: '/dwd',
+          pathname: '/CMB/dwd',
         }}
+	  headerContentRender={()=>(
+          <div>XX市XX城投集团</div>
+	  )}
+	  rightContentRender={() => (
+		  <div>
+		  <Avatar src="https://joeschmoe.io/api/v1/random" />
+		  <Button
+		  size="small"
+		  style={{ margin: '0 16px', verticalAlign: 'middle' }}
+		  >
+		  用户名
+		  </Button>
+		  </div>
+	  )}
       >
-        <PageContainer ghost content={content}>
-          <ProCard direction="column" ghost gutter={[0, 16]}>
-            <ProCard style={{ height: 200 }} />
-            <ProCard gutter={16} ghost style={{ height: 200 }}>
-              <ProCard colSpan={16} />
-              <ProCard colSpan={8} />
-            </ProCard>
-          </ProCard>
+        <PageContainer ghost 
+	  header={{
+		  title: '',
+	  }}
+	  >
+	  <Show/ >
         </PageContainer>
       </ProLayout>
     </div>

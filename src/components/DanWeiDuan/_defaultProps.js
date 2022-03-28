@@ -3,18 +3,18 @@ import { HomeOutlined, ProjectOutlined, WarningOutlined, BarChartOutlined, Unord
 
 export default {
   route: {
-    path: '/dwd',
+    path: '/CMB/dwd',
     routes: [
       {
-        path: '/dwd',
+        path: '/CMB/home',
         name: '基础设置',
         icon: <HomeOutlined />,
-        component: './dwd',
+        component: '/CMB/dwd',
 		routes: [
           {
-            path: '/xmgl/xmxz',
+            path: '/jcsz/ygwh',
             name: '员工维护',
-            component: './XMXZ',
+            component: './YGWH',
           },
           {
             path: '/xmgl/xmcx',
@@ -69,27 +69,27 @@ export default {
         component: './XMGL',
         routes: [
           {
-            path: '/xmgl/xmxz',
+            path: '/zjgl/lsgl',
             name: '账户交易流水管理',
-            component: './XMXZ',
+            component: './lsgl',
 			routes: [
 				{
-					path: '/fxyj/fxcx',
+					path: '/CMB/dwd',
 					name: '流水查询',
-					component: './FXCX',
+					component: '/CMB/dwd',
 				},
 				{
-					path: '/fxyj/fxts',
+					path: '/lsgl/lssb',
 					name: '流水上报',
 					component: './FXTS',
 				},
 				{
-					path: '/fxyj/fxzz',
+					path: '/lsgl/sbxg',
 					name: '流水上报修改',
 					component: './FXZZ',
 				},
 				{
-					path: '/fxyj/fxzz',
+					path: '/lsgl/sbcx',
 					name: '流水上报查询',
 					component: './FXZZ',
 				},
@@ -127,7 +127,7 @@ export default {
     ],
   },
   location: {
-    pathname: '/dwd',
+    pathname: '/CMB/dwd',
   },
 };
 

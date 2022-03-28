@@ -1,11 +1,13 @@
 {
-  "name": "02",
+  "name": "CMB",
   "version": "0.1.0",
-  "homepage": "./CMB",
+  "homepage": "https://0xf1c09.github.io/CMB/",
   "private": true,
   "dependencies": {
+    "@ant-design/charts": "^1.3.6",
     "@ant-design/pro-card": "^1.18.42",
     "@ant-design/pro-layout": "^6.34.6",
+    "@ant-design/pro-table": "^2.69.0",
     "@craco/craco": "^6.4.3",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
@@ -16,6 +18,7 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
+    "umi-request": "^1.4.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
